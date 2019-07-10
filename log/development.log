@@ -868,3 +868,23 @@ Processing by PostsController#edit as HTML
 Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.2ms)
 
 
+Started PATCH "/posts/6" for 104.162.182.37 at 2019-07-10 03:00:56 +0000
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vQDTOCzt/PNeJMWJSyNEXYBZSR5M93zPRUJx/cC1qYuvqS7QvMEt4/bYwTbyWjt8dbAF2vjGkWYpbHnlqNjomg==", "post"=>{"title"=>"Holaaa", "description"=>"amigos"}, "commit"=>"Update Post", "id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2019-07-10 03:00:56.803610"], ["id", 6]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://142.93.113.210:52375/posts/6
+Completed 302 Found in 14ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/posts/6" for 104.162.182.37 at 2019-07-10 03:00:56 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
