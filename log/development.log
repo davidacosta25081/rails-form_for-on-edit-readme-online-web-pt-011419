@@ -905,3 +905,12 @@ Redirected to http://142.93.113.210:52375/posts/7
 Completed 302 Found in 7ms (ActiveRecord: 2.6ms)
 
 
+Started GET "/posts/7" for 104.162.182.37 at 2019-07-10 03:06:46 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
