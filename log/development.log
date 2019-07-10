@@ -865,3 +865,6 @@ Processing by PostsController#edit as HTML
   [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
   Rendering posts/edit.html.erb within layouts/application
   Rendered posts/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
